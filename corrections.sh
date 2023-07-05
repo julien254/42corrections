@@ -12,8 +12,8 @@ if [ "$norm" -eq 0 ]; then
 	echo "$nameProject" >> .git/info/sparse-checkout
 	git remote add origin https://github.com/julien254/42corrections.git
 	git pull origin main
-	cd "${nameProject}/ex00/"
-	make
+	cd "${nameProject}"
+	sh ${nameproject}_corrections.sh
 else
 	echo "Problemes de NORM !"
 fi
