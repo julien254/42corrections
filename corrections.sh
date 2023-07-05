@@ -13,7 +13,7 @@ if [ "$norm" -eq 0 ]; then
 	git remote add origin https://github.com/julien254/42corrections.git
 	git pull origin main
 	cd "${nameProject}"
-	sh "${nameproject}_corrections.sh"
+	sh "${nameProject}_corrections.sh"
 else
 	echo "Problemes de NORM !"
 fi
