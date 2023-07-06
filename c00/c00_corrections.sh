@@ -28,28 +28,28 @@ sleep 4
 
 #____________________WELLCOME______________________________
 
-delay=0.1
-echo "\n\n"
-text="Bienvenue dans le testeur de projet 42!"
+# delay=0.1
+# echo "\n\n"
+# text="Bienvenue dans le testeur de projet 42!"
 
-i=1
-while [ "$i" -lt "${#text}" ]; do
-	echo -n "$(echo "$text" | cut -c $i)"
-    sleep "$delay"
-    i=$(($i + 1))
-done
+# i=1
+# while [ "$i" -lt "${#text}" ]; do
+# 	echo -n "$(echo "$text" | cut -c $i)"
+#     sleep "$delay"
+#     i=$(($i + 1))
+# done
 
-echo "\n"
-sleep 1
-text="Lancement du testeur pour le projet c00"
+# echo "\n"
+# sleep 1
+# text="Lancement du testeur pour le projet c00"
 
-i=1
-while [ "$i" -lt "${#text}" ]; do
-	echo -n "$(echo "$text" | cut -c $i)"
-    sleep "$delay"
-    i=$(($i + 1))
-done
+# i=1
+# while [ "$i" -lt "${#text}" ]; do
+# 	echo -n "$(echo "$text" | cut -c $i)"
+#     sleep "$delay"
+#     i=$(($i + 1))
+# done
 
-sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
+# sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
 
 #_____________________EX00/FT_PUTCHAR_______________________
