@@ -28,7 +28,7 @@ sleep 4
 
 #____________________WELLCOME______________________________
 
-delay=1
+delay=0.1
 echo "\n\n"
 text="Bienvenue dans le testeur de projet 42!"
 
@@ -47,7 +47,7 @@ i=0
 while [ $i -lt ${#text} ]; do
     echo -n "${text:$i:1}"
     sleep "$delay"
-    i=$((i + 1))
+    i=$(($i + 1))
 done
 
 sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
