@@ -30,7 +30,7 @@ sleep 2;
 
 #____________________WELLCOME______________________________
 
-delay=0.05
+delay=0.01
 echo "\n\n"
 text="Bienvenue dans le testeur de projet 42!"
 
