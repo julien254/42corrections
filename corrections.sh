@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/06 11:53:31 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/06 11:55:50 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -15,7 +15,7 @@ echo "Quel projet voulez-vous corriger ?"
 read nameProject
 norm=$(norminette -R CheckForbiddenSourceHeader | grep Error: | wc -l)
 if [ "$norm" -eq 0 ]; then
-	echo "\033[5;31mPas de problemes de Norm !\033[0m"
+	echo "\033[5;32mPas de problemes de Norm !\033[0m"
 	sleep 3
 	mkdir "${nameProject}_corrections"
 	cd "${nameProject}_corrections/"
