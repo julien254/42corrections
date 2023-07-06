@@ -28,7 +28,7 @@ sleep 4
 
 #____________________WELLCOME______________________________
 
-echo "\n\nBienvenu dans le testeur de projet 42"
+echo "\n\nBienvenue dans le testeur de projet 42"
 sleep 1
 echo -n "\n\nLancement du testeur pour le projet c00"
 sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
