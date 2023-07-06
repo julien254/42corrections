@@ -8,7 +8,7 @@ etoile="$(echo "\342\230\205")"
 
 echo "\033[1;33;40m$etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile \033[0m"
 
-echo "\033[1;33;40m$etoile            .___________. _______     _______.___________. _______ .______                 \033[0m"
+echo "\033[1;33;40m$etoile            .___________. _______     _______.___________. _______ .______                 $etoile \033[0m"
 echo "\033[1;33;40m$etoile            |           ||   ____|   /       |           ||   ____||   _  \                \033[0m"
 echo "\033[1;33;40m$etoile            \`---|  |----\`|  |__     |   (----\`---|  |----\`|  |__   |  |_)  |               \033[0m"
 echo "\033[1;33;40m$etoile                |  |     |   __|     \   \       |  |     |   __|  |      /                \033[0m"
@@ -29,7 +29,7 @@ echo "\033[1;33;40m$etoile        |   ___/  |      /     |  |  |  | .--.  |  | |
 echo "\033[1;33;40m$etoile        |  |      |  |\  \----.|  \`--'  | |  \`--'  | |  |____ |  \`----.    |  |            \033[0m"
 echo "\033[1;33;40m$etoile        | _|      | _| \`._____| \______/   \______/  |_______| \______|    |__|   \"c00\"    \033[0m"
 echo "\033[1;33;40m$etoile                                                                                           \033[0m"
-echo "\033[1;33;40m$etoile                                                                                           \033[0m"
+echo "\033[1;33;40m$etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile \033[0m"
 sleep 2;
 
 #____________________WELLCOME______________________________
