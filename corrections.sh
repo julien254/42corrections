@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/06 12:12:17 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/06 12:18:48 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -16,13 +16,16 @@
 echo "Quel projet voulez-vous corriger ?"
 read nameProject
 
+# Verification de la NORM
+
+norm=$(norminette -R CheckForbiddenSourceHeader | grep Error: | wc -l)
+
 # Creation du fichier clean
 
 echo "rm -rf c00_corrections/ corrections.sh clean.sh" > clean.sh
 
-# Verification de la NORM et lancement du test si pas d'erreur
+# Lancement du test si pas d'erreur de NORM
 
-norm=$(norminette -R CheckForbiddenSourceHeader | grep Error: | wc -l)
 if [ "$norm" -eq 0 ]; then
 	echo "\033[5;32mPas de problemes de Norm !\033[0m"
 	sleep 3;
