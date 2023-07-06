@@ -33,7 +33,7 @@ echo "\n\n"
 text="Bienvenue dans le testeur de projet 42!"
 
 i=1
-while [ "$i" -lt "${#text}" ]; do
+while [ "$i" -le "${#text}" ]; do
 	echo -n "$(echo "$text" | cut -c $i)"
     sleep "$delay"
     i=$(($i + 1))
@@ -44,7 +44,7 @@ sleep 1
 text="Lancement du testeur pour le projet c00"
 
 i=1
-while [ "$i" -lt "${#text}" ]; do
+while [ "$i" -le "${#text}" ]; do
 	echo -n "$(echo "$text" | cut -c $i)"
     sleep "$delay"
     i=$(($i + 1))
