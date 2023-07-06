@@ -26,4 +26,11 @@ echo "\033[1;33;40m        | _|      | _| \`._____| \______/   \______/  |______
 echo "\033[1;33;40m                                                                                           \033[0m"
 sleep 4
 
+#____________________WELLCOME______________________________
+
+echo "\n\nBienvenu dans le testeur de projet 42"
+sleep 1
+echo "\n\nLancement du testeur pour le projet c00"
+sleep 1;echo .;sleep 1;echo .;sleep 1;echo .;sleep 1
+
 #_____________________EX00/FT_PUTCHAR_______________________
