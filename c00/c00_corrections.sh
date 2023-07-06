@@ -8,8 +8,8 @@ etoile="$(echo "\342\230\205")"
 
 echo "\033[1;33;40m$etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile \033[0m"
 
-echo "\033[1;33;40m$etoile            .___________. _______     _______.___________. _______ .______               $etoile \033[0m"
-echo "\033[1;33;40m              |           ||   ____|   /       |           ||   ____||   _  \              $etoile \033[0m"
+echo "\033[1;33;40m             .___________. _______     _______.___________. _______ .______               $etoile \033[0m"
+echo "\033[1;33;40m$etoile            |           ||   ____|   /       |           ||   ____||   _  \              $etoile \033[0m"
 echo "\033[1;33;40m$etoile            \`---|  |----\`|  |__     |   (----\`---|  |----\`|  |__   |  |_)  |             $etoile \033[0m"
 echo "\033[1;33;40m$etoile                |  |     |   __|     \   \       |  |     |   __|  |      /              $etoile \033[0m"
 echo "\033[1;33;40m$etoile                |  |     |  |____.----)   |      |  |     |  |____ |  | \ \----.         $etoile \033[0m"
