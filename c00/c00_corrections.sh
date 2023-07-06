@@ -32,18 +32,22 @@ delay=0.1
 echo "\n\n"
 text="Bienvenue dans le testeur de projet 42!"
 
-for ((i = 0; i < ${#text}; i++)); do
+i=0
+while [ $i -lt ${#text} ]; do
     echo -n "${text:$i:1}"
     sleep "$delay"
+    i=$((i + 1))
 done
 
 echo "\n"
 sleep 1
 text="Lancement du testeur pour le projet c00"
 
-for ((i = 0; i < ${#text}; i++)); do
+i=0
+while [ $i -lt ${#text} ]; do
     echo -n "${text:$i:1}"
     sleep "$delay"
+    i=$((i + 1))
 done
 
 sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
