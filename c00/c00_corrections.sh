@@ -32,7 +32,7 @@ delay=0.1
 echo "\n\n"
 text="Bienvenue dans le testeur de projet 42!"
 
-i=0
+i=1
 while [ "$i" -lt "${#text}" ]; do
 	echo -n "$(echo "$text" | cut -c $i)"
     sleep "$delay"
@@ -43,7 +43,7 @@ echo "\n"
 sleep 1
 text="Lancement du testeur pour le projet c00"
 
-i=0
+i=1
 while [ "$i" -lt "${#text}" ]; do
 	echo -n "$(echo "$text" | cut -c $i)"
     sleep "$delay"
