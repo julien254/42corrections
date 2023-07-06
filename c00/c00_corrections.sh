@@ -28,9 +28,24 @@ sleep 4
 
 #____________________WELLCOME______________________________
 
-echo "\n\nBienvenue dans le testeur de projet 42"
+delay=0.1
+echo "\n\n"
+text="Bienvenue dans le testeur de projet 42!"
+
+for ((i = 0; i < ${#text}; i++)); do
+    echo -n "${text:$i:1}"
+    sleep "$delay"
+done
+
+echo "\n"
 sleep 1
-echo -n "\n\nLancement du testeur pour le projet c00"
+text="Lancement du testeur pour le projet c00"
+
+for ((i = 0; i < ${#text}; i++)); do
+    echo -n "${text:$i:1}"
+    sleep "$delay"
+done
+
 sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
 
 #_____________________EX00/FT_PUTCHAR_______________________
