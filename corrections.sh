@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/06 12:20:26 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/06 12:23:30 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -40,7 +40,7 @@ if [ "$norm" -eq 0 ]; then
 	clear
 	sh "${nameProject}_corrections.sh"
 elif [ "$norm" -eq 1 ]; then
-	echo "Il y a 1 Probleme de NORM !"
+	echo "\033[5;31mIl y a 1 Probleme de NORM !\033[0m"
 else
-	echo "Il y a $norm Problemes de NORM !"
+	echo "\033[5;31mIl y a $norm Problemes de NORM !\033[0m"
 fi
