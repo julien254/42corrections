@@ -29,7 +29,7 @@ echo "\033[1;33;40m$etoile        |   ___/  |      /     |  |  |  | .--.  |  | |
 echo "\033[1;33;40m$etoile        |  |      |  |\  \----.|  \`--'  | |  \`--'  | |  |____ |  \`----.    |  |          $etoile \033[0m"
 echo "\033[1;33;40m$etoile        | _|      | _| \`._____| \______/   \______/  |_______| \______|    |__|   \"c00\"  $etoile \033[0m"
 echo "\033[1;33;40m$etoile                                                                                         $etoile \033[0m"
-echo "\033[1;33;40m$etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile $etoile \033[0m"
+echo "\033[1;33;40m$etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile \033[0m"
 sleep 2;
 
 #____________________WELLCOME______________________________
