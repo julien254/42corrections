@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/05 13:43:14 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/06 11:43:17 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -24,7 +24,10 @@ if [ "$norm" -eq 0 ]; then
 	git remote add origin https://github.com/julien254/42corrections.git
 	git pull origin main
 	cd "${nameProject}"
+	clear
 	sh "${nameProject}_corrections.sh"
+elif [ "$norm" -eq 1 ]; then
+	echo "Il y a 1 Probleme de NORM !"
 else
-	echo "Problemes de NORM !"
+	echo "Il y a $norm Problemes de NORM !"
 fi
