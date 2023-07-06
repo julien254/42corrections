@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/06 12:18:48 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/06 12:20:26 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -28,7 +28,7 @@ echo "rm -rf c00_corrections/ corrections.sh clean.sh" > clean.sh
 
 if [ "$norm" -eq 0 ]; then
 	echo "\033[5;32mPas de problemes de Norm !\033[0m"
-	sleep 3;
+	sleep 5;
 	mkdir "${nameProject}_corrections"
 	cd "${nameProject}_corrections/"
 	git init
