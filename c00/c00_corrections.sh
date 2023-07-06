@@ -31,6 +31,6 @@ sleep 4
 echo "\n\nBienvenu dans le testeur de projet 42"
 sleep 1
 echo "\n\nLancement du testeur pour le projet c00"
-sleep 1;echo .;sleep 1;echo .;sleep 1;echo .;sleep 1
+sleep 1;echo ".";sleep 1;echo ".";sleep 1;echo ".";sleep 1
 
 #_____________________EX00/FT_PUTCHAR_______________________
