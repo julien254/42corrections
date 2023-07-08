@@ -3,6 +3,7 @@
 #__________________________VARIABLE________________________________
 
 etoile="$(echo "\342\230\205")"
+coeur="$(echo "\342\235\224")"
 
 #_______________________HEADER TESTER 42 PROJECT__________________________
 
@@ -36,7 +37,7 @@ sleep 2;
 
 delay=0.03
 echo "\n\n"
-text="Bienvenue dans le testeur de projet 42!"
+text="Bienvenue dans le testeur de projet 42! $coeur $coeur"
 
 i=1
 while [ "$i" -le "${#text}" ]; do
