@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 21:19:21 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 21:44:52 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -15,7 +15,10 @@
 
 etoile="$(echo "\342\230\205")"
 coeur="$(echo "\342\231\245")"
+check="$(echo "\342\230\224")"
+croix="$(echo "\342\230\226")"
 rouge="\033[31m"
+vert="\033[32m"
 resetcolor="\033[0m"
 
 #_______________________HEADER TESTER 42 PROJECT__________________________
@@ -74,6 +77,10 @@ sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 #_____________________EX00/Z_______________________
 
-result=$(cat -e ../../ex00/z)
-echo "\nEx00/z : $result\n"
+result=$(cat ../../ex00/z)
 
+if [ ${result} -eq "Z\n" ]; then
+	echo "\nEx00/z : $vert$check$resetcolor\n"
+else
+	echo "\nEx00/z : $rouge$croix$resetcolor\n"
+fi
