@@ -39,7 +39,7 @@ sleep 2;
 
 delay=0.03
 echo "\n\n"
-text="Bienvenue dans le testeur de projet 42! $rouge$coeur $coeur&resetcolor"
+text="Bienvenue dans le testeur de projet 42! $rouge$coeur $coeur &resetcolor"
 
 i=1
 while [ "$i" -le "${#text}" ]; do
