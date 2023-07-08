@@ -6,15 +6,14 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/06 13:32:00 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 17:56:17 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
 
 # Recuperation du nom du projet
 
-echo "Quel projet voulez-vous corriger ?"
-read nameProject
+nameProject=$(pwd | cut "/" " " | awk '{print $NF}')
 
 # Verification de la NORM
 
@@ -22,7 +21,7 @@ norm=$(norminette -R CheckForbiddenSourceHeader | grep Error: | wc -l)
 
 # Creation du fichier clean
 
-echo "rm -rf c00_corrections/ corrections.sh clean.sh" > clean.sh
+echo "rm -rf ${nameProject}_corrections/ corrections.sh clean.sh" > clean.sh
 
 # Lancement du test si pas d'erreur de NORM
 
