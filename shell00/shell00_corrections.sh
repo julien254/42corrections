@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 19:06:35 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 19:15:01 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -74,6 +74,7 @@ sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 #_____________________EX00/Z_______________________
 
+ls -la ../../ex00/z
 resutl=$(cat ../../ex00/z)
 echo "\nEx00/z : $result\n"
 
