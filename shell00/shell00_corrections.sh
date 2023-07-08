@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 18:38:45 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 18:42:32 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -70,8 +70,9 @@ while [ "$i" -le "${#text}" ]; do
     i=$(($i + 1))
 done
 
-sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1
+sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 #_____________________EX00/Z_______________________
 
 echo "\nEx00/z :\n"
+pwd
