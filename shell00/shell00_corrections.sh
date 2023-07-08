@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 22:44:04 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 22:45:48 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -16,8 +16,7 @@
 etoile="$(echo "\342\230\205")"
 coeur="$(echo "\342\231\245")"
 tcheck="$(echo "\342\234\223")"
-tcheck=$(printf '\xE2\x9C\x94')
-tcheck="$(echo "\342\230\214")"
+tcheck="$(echo "\342\234\227")"
 croix="$(echo "\342\230\226")"
 rouge="\033[31m"
 vert="\033[32m"
