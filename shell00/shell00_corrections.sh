@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 19:26:37 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 19:28:15 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -78,6 +78,6 @@ pwd
 filez="../../ex00/z"
 echo $filez
 cat "$filez"
-resutl=$(cat $filez)
+resutl=$(cat "$filez")
 echo "\nEx00/z : $result\n"
 
