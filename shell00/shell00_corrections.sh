@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 22:01:22 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 22:03:34 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -79,7 +79,7 @@ sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 result=$(cat ../../ex00/z)
 
-if [ ${result} = $'Z\n' ]; then
+if [[ ${result} == $'Z\n' ]]; then
 	echo "\nEx00/z : 1$vert$check$resetcolor\n"
 else
 	echo "\nEx00/z : 0rouge$croix$resetcolor\n"
