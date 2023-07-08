@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 22:14:17 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 22:15:17 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -79,7 +79,7 @@ sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 result=$(cat -e ../../ex00/z)
 
-if [[ ${result} == "Zi\$" ]]; then
+if [ ${result} = "Zi\$" ]; then
 	echo "\nEx00/z : 1$vert$check$resetcolor\n"
 else
 	echo "\nEx00/z : 0rouge$croix$resetcolor\n"
