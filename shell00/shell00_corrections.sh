@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 21:53:40 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 21:57:31 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -77,7 +77,7 @@ sleep 1;echo -n ".";sleep 1;echo -n ".";sleep 1;echo ".";sleep 1
 
 #_____________________EX00/Z_______________________
 
-result=$(cat ../../ex00/z)
+result=$(cat -e ../../ex00/z)
 
 if [ ${result} = "Z\n" ]; then
 	echo "\nEx00/z : 1$vert$check$resetcolor\n"
