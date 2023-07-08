@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    c00_corrections.sh                                 :+:      :+:    :+:    #
+#    shell00_corrections.sh                             :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 17:32:21 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 17:43:47 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/sh
@@ -41,7 +41,7 @@ echo "\033[1;33;40m$etoile        |   _  \  |   _  \      /  __  \        |  | |
 echo "\033[1;33;40m         |  |_)  | |  |_)  |    |  |  |  |       |  | |  |__   |  ,----'\`---|  |----\`       \033[0m"
 echo "\033[1;33;40m$etoile        |   ___/  |      /     |  |  |  | .--.  |  | |   __|  |  |         |  |          $etoile \033[0m"
 echo "\033[1;33;40m         |  |      |  |\  \----.|  \`--'  | |  \`--'  | |  |____ |  \`----.    |  |            \033[0m"
-echo "\033[1;33;40m$etoile        | _|      | _| \`._____| \______/   \______/  |_______| \______|    |__|   \"c00\"  $etoile \033[0m"
+echo "\033[1;33;40m$etoile        | _|      | _| \`._____| \______/   \______/  |_______| \______|    |__|\"shell00\" $etoile \033[0m"
 echo "\033[1;33;40m                                                                                            \033[0m"
 echo "\033[1;33;40m$etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile  $etoile \033[0m"
 sleep 2;
@@ -61,7 +61,7 @@ done
 
 echo "\n"
 sleep 1
-text="Lancement du testeur pour le projet c00"
+text="Lancement du testeur pour le projet shell00"
 
 i=1
 while [ "$i" -le "${#text}" ]; do
