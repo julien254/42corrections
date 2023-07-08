@@ -4,6 +4,8 @@
 
 etoile="$(echo "\342\230\205")"
 coeur="$(echo "\342\231\245")"
+rouge="\033[31m"
+resetcolor="\033[0m"
 
 #_______________________HEADER TESTER 42 PROJECT__________________________
 
@@ -37,7 +39,7 @@ sleep 2;
 
 delay=0.03
 echo "\n\n"
-text="Bienvenue dans le testeur de projet 42! $coeur $coeur"
+text="Bienvenue dans le testeur de projet 42! $rouge$coeur $coeur&resetcolor"
 
 i=1
 while [ "$i" -le "${#text}" ]; do
