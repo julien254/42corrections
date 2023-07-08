@@ -6,14 +6,14 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/05 13:43:07 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 18:00:00 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/08 18:09:51 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
 
 # Recuperation du nom du projet
 
-nameProject=$(pwd | tr "/" " " | awk '{print $NF}')
+nameProject=$(basename "$(pwd)")
 
 # Verification de la NORM
 
