@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 01:46:40 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 01:51:44 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -179,7 +179,7 @@ fi
 liste=$(find . -type f \( -name '*~' -o -name '#*#' \))
 resutl=$(sh ../../ex08/clean)
 
-if [[ "${result}" = "${liste}" && $(ls -l | grep -e test1 -e test2 | wc -l) -eq 0 && $(ls -l | grep test3 | wc -l) -eq 1 ]]; then
+if [ "${result}" = "${liste}" ] && [ $(ls -l | grep -e test1 -e test2 | wc -l) -eq 0 ] && [ $(ls -l | grep test3 | wc -l) -eq 1 ]; then
 	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex05/git_commit : $rouge$croix$resetcolor\n"
