@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 00:35:30 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 00:40:18 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -169,9 +169,9 @@ fi
 
 result=$(cat -e ../../ex07/b | tr "\$" "5")
 echo $result
-b="Episode V, A NEW H0PE It is a period of civil war5 Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. 5 During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.5 5 5 Pursued by the Empire's sinister agents,5 Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..5 5 5 5 5"
-echo $b
-if [ "${result}" = "${b}" ]; then
+mystr="Episode V, A NEW H0PE It is a period of civil war5 Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire. 5 During the battle, Rebel spies managed to steal secret plans to the Empire's ultimate weapon, the STAR DEATH, an armored space station with enough power to destroy an entire planet.5 5 5 Pursued by the Empire's sinister agents,5 Princess Mehdi races home aboard her starship, custodian of the stolen plans that can save her people and restore the dictatorship to the galaxie..5 5 5 5 5"
+echo $mystr
+if [ "${result}" = "${str}" ]; then
 	echo "Ex05/diff : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex05/diff : $rouge$croix$resetcolor\n"
