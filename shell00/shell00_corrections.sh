@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 01:00:25 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 01:05:34 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -169,7 +169,7 @@ fi
 
 diff b ../../ex07/b
 if [ $? -eq 0 ]; then
-	echo "Ex05/diff : $vert$tcheck$resetcolor\n"
+	echo "Ex07/diff : $vert$tcheck$resetcolor\n"
 else
-	echo "Ex05/diff : $rouge$croix$resetcolor\n"
+	echo "Ex07/diff : $rouge$croix$resetcolor\n"
 fi
