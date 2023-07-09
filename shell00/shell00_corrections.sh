@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 14:48:42 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 14:56:23 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -85,11 +85,21 @@ if [ ${result} = "Z\$" ]; then
 else
 	echo "\n\nEx00/z : $rouge$croix$resetcolor\n"
 fi
+
 #_____________________EX0!/TESTSHELL00___________________
 
 years=$(date +%Y)
 user=$(echo "$USER")
 
 tar -xf ../../ex01/testShell00.tar
-result=&(ls -l testShell00 | xargs)
-echo $result
+result=$(ls -l testShell00 | xargs)
+
+if [ ${result} = "-r--r-xr-x 1 $user $user 40 juin 1 23:42 testShell00" ]; then
+	echo "\n\nEx01/testShell00 : $vert$tcheck$resetcolor\n"
+elif [ ${result} = "-r--r-xr-x 1 $user $user 40 juin 1 $years testShell00" ]; then
+	echo "\n\nEx01/testShell00 : $vert$tcheck$resetcolor\n"
+else
+	echo "\n\nEx01/testShell00 : $rouge$croix$resetcolor\n"
+fi
+
+
