@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 14:31:44 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 14:33:54 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -87,5 +87,5 @@ else
 fi
 #_____________________EX0!/TESTSHELL00___________________
 
-years=&(echo "date +%Y")
+years=&(date +%Y)
 echo years
