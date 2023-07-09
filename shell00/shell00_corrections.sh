@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 01:05:34 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 01:42:42 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -172,4 +172,15 @@ if [ $? -eq 0 ]; then
 	echo "Ex07/diff : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex07/diff : $rouge$croix$resetcolor\n"
+fi
+
+#____________________EX08/CLEAN______________________
+
+liste=$(find . -type f \( -name '*~' -o -name '#*#' \)-print)
+resutl=$(sh ../../ex08/clean)
+
+if [ "${result}" = "${liste}" && $(ls -l | grep -e test1 -e test2 | wc -l) -eq 0 && $(ls -l | grep test3 | wc -l) -eq 1 ]; then
+	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex05/git_commit : $rouge$croix$resetcolor\n"
 fi
