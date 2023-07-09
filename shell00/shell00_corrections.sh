@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 17:19:19 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 17:58:28 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -139,4 +139,15 @@ if [ "${result}" = "${midLS}" ]; then
 	echo "Ex04/midLS : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex04/midLS : $rouge$croix$resetcolor\n"
+fi
+
+#____________________EX05/GIT_COMMIT_________________
+
+commit=$(git log --format=%H -n 5)
+result=$(sh ../../ex05/git_commit.sh)
+
+if [ "${result}" = "${commit}" ]; then
+	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex05/git_commit : $rouge$croix$resetcolor\n"
 fi
