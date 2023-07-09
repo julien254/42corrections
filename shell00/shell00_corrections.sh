@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 17:04:05 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 17:16:04 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -132,4 +132,7 @@ fi
 
 #____________________EX04/midLS______________________
 
-
+midLS=$(ls -tmp)
+result=$(sh ../../ex05/midLS)
+echo $midLS
+echo $result
