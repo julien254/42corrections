@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 19:39:22 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 19:41:13 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -157,7 +157,7 @@ fi
 gitignore=$(git ls-files --others --ignored --exclude-standard)
 result=$(sh ../../ex06/git_ignore.sh)
 pwd
-ls -la
+ls -la */*
 cp ex06/test.lol ex06/test2.lol ex06/.gitignore ../
 cd ..
 git ls-files --others --ignored --exclude-standard
