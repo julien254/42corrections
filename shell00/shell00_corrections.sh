@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 16:58:52 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 16:59:58 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -129,3 +129,5 @@ if [ "${result}" = "${id_rsa}" ]; then
 else
 	echo "\n\nEx03/id_rsa_pub : $rouge$croix$resetcolor\n"
 fi
+echo $id_rsa
+echo $result
