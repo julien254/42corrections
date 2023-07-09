@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 15:22:40 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 15:24:12 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -104,5 +104,5 @@ fi
 
 #____________________EX02/OWI, EMCORE...__________________
 
-tar -xf ../../ex02/exo2.tar exo2/
+tar -xf ../../ex02/exo2.tar -c exo2/
 ls -l exo2
