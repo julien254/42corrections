@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 16:02:22 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 16:05:38 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -107,4 +107,4 @@ fi
 mkdir exo2
 tar -xf ../../ex02/exo2.tar -C exo2/
 total=$(ls -l exo2 | xargs | awk '{print $2}')
-echo $total
+ls -l exo2 | xargs
