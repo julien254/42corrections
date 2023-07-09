@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 16:11:55 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 16:17:33 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -110,4 +110,4 @@ total=$(ls -l exo2 | xargs | awk '{print $2}')
 octet1=$(ls -l exo2 | xargs | awk '{print $7}')
 octet2=$(ls -l exo2 | xargs | awk '{print $25}')
 echo "$total $octet1 $octet2"
-ls -l exo2 | xargs
+ls -l exo2 | xargs 
