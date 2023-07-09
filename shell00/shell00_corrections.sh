@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 23:53:00 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 23:54:51 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -167,5 +167,5 @@ fi
 
 #____________________EX07/DIFF_______________________
 
-result=$(cat ../../ex07/b)
-echo $result | cat -e
+result=$(cat -e ../../ex07/b)
+echo $result
