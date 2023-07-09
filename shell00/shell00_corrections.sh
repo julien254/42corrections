@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/08 22:58:46 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 14:29:41 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -85,3 +85,7 @@ if [ ${result} = "Z\$" ]; then
 else
 	echo "\n\nEx00/z : $rouge$croix$resetcolor\n"
 fi
+#_____________________EX0!/TESTSHELL00___________________
+
+years=&(date +%Y)
+echo years
