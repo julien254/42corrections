@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 16:17:33 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 16:25:24 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -109,5 +109,12 @@ tar -xf ../../ex02/exo2.tar -C exo2/
 total=$(ls -l exo2 | xargs | awk '{print $2}')
 octet1=$(ls -l exo2 | xargs | awk '{print $7}')
 octet2=$(ls -l exo2 | xargs | awk '{print $25}')
-echo "$total $octet1 $octet2"
-ls -l exo2 | xargs 
+result=$(ls -l exo2 | xargs)
+
+if [ "${result}" = "total $total drwx--xr-x 2 jdetre jdetre $octet1 juin 1 20:47 test0 -rwx--xr-- 1 jdetre jdetre 4 juin 1 21:46 test1 dr-x---r-- 2 jdetre jdetre $octet2 juin 1 22:45 test2 -r-----r-- 2 jdetre jdetre 1 juin 1 23:44 test3 -rw-r----x 1 jdetre jdetre 2 juin 1 23:43 test4 -r-----r-- 2 jdetre jdetre 1 juin 1 23:44 test5 lrwxrwxrwx 1 jdetre jdetre 5 juin 1 22:20 test6 -> test0" ]; then
+	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
+elif [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 $years testShell00" ]; then
+	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex02/exo2.tar : $rouge$croix$resetcolor\n"
+fi
