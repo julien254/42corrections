@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 16:48:25 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 16:58:52 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -124,7 +124,7 @@ fi
 id_rsa=$(cat ~/.ssh/id_rsa.pub)
 result=$(cat ../../ex03/id_rsa_pub)
 
-if [ ${result} = ${id_rsa} ]; then
+if [ "${result}" = "${id_rsa}" ]; then
 	echo "\n\nEx03/id_rsa_pub : $vert$tcheck$resetcolor\n"
 else
 	echo "\n\nEx03/id_rsa_pub : $rouge$croix$resetcolor\n"
