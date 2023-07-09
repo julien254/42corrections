@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 19:14:36 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 19:25:30 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -156,12 +156,7 @@ fi
 
 gitignore=$(git ls-files --others --ignored --exclude-standard)
 result=$(sh ../../ex06/git_ignore.sh)
-cd ../
-touch .gitignore
-echo "*.lol" > .gitignore
-touch lol.lol lol2.lol
-echo "lol" > lol.lol
-echo "lol" > lol2.lol
+pwd
 git ls-files --others --ignored --exclude-standard
 if [ "${result}" = "${gitignore}" ]; then
 	echo "Ex06/git_ignore : $vert$tcheck$resetcolor\n"
