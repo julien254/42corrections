@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 15:00:44 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 15:03:07 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -86,7 +86,7 @@ else
 	echo "\n\nEx00/z : $rouge$croix$resetcolor\n"
 fi
 
-#_____________________EX0!/TESTSHELL00___________________
+#_____________________EX01/TESTSHELL00___________________
 
 years=$(date +%Y)
 user=$(echo "$USER")
@@ -95,11 +95,11 @@ tar -xf ../../ex01/testShell00.tar
 result=$(ls -l testShell00 | xargs)
 
 if [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 23:42 testShell00" ]; then
-	echo "\n\nEx01/testShell00 : $vert$tcheck$resetcolor\n"
+	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
 elif [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 $years testShell00" ]; then
-	echo "\n\nEx01/testShell00 : $vert$tcheck$resetcolor\n"
+	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
 else
-	echo "\n\nEx01/testShell00 : $rouge$croix$resetcolor\n"
+	echo "Ex01/testShell00 : $rouge$croix$resetcolor\n"
 fi
 
-
+#____________________EX02/
