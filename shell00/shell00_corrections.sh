@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 17:16:55 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 17:19:19 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -134,5 +134,9 @@ fi
 
 midLS=$(ls -tmp)
 result=$(sh ../../ex04/midLS)
-echo $midLS
-echo $result
+
+if [ "${result}" = "${midLS}" ]; then
+	echo "Ex04/midLS : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex04/midLS : $rouge$croix$resetcolor\n"
+fi
