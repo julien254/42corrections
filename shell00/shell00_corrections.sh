@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/09 17:58:28 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/09 18:08:29 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -150,4 +150,15 @@ if [ "${result}" = "${commit}" ]; then
 	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex05/git_commit : $rouge$croix$resetcolor\n"
+fi
+
+#____________________EX06/GIT_IGNORE__________________
+
+gitignore=$(git ls-files --others --ignored --exclude-standard)
+result=$(sh ../../ex06/git_ignore.sh)
+echo $gitignore
+if [ "${result}" = "${gitignore}" ]; then
+	echo "Ex06/git_ignore : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex06/git_ignore : $rouge$croix$resetcolor\n"
 fi
