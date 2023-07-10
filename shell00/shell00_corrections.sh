@@ -6,7 +6,7 @@
 #    By: judetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by judetre            #+#    #+#              #
-#    Updated: 2023/07/10 12:34:13 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 12:37:29 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -91,8 +91,8 @@ fi
 #_____________________EX01/TESTSHELL00___________________
 
 years=$(date +%Y)
-user=$(echo "$USER")
-echo "-r--r-xr-x 1 $user $years_angouleme 40 juin 1 23:42 testShell00"
+user=$(echo "$LOGNAME")
+echo "-r--r-xr-x 1 $user ${years}_angouleme 40 juin 1 23:42 testShell00"
 tar -xf ../../ex01/testShell00.tar
 result=$(ls -l testShell00 | xargs)
 echo $result
