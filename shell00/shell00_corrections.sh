@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 02:16:47 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 02:18:26 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -177,10 +177,7 @@ fi
 #____________________EX08/CLEAN______________________
 
 liste=$(find . -type f \( -name '*~' -o -name '#*#' \) -print)
-echo $liste
 result=$(sh ../../ex08/clean)
-echo $result
-ls -l
 if [ "${result}" = "${liste}" ] && [ $(ls -l | grep -e test8 -e test9 | wc -l) -eq 0 ] && [ $(ls -l | grep test10 | wc -l) -eq 1 ] && [ $(ls -l test10 | grep -e test8 -e test9 | wc -l) -eq 0 ]; then
 	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
 else
