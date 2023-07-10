@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 03:14:04 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 03:16:45 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -210,7 +210,7 @@ fi
 
 if [ $point -eq 10 ]; then
 	echo "\033[1;3;5;32mFelicitation ! c'est un sans faute !$resetcolor"
-elif [ $point -eq 0 ]; then
+else
 	echo "\033[1mTu as $point/10 exercices de bon !$resetcolor"
 fi
 
