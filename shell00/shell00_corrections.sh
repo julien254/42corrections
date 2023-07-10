@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 03:33:16 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 12:29:16 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -96,10 +96,10 @@ user=$(echo "$USER")
 tar -xf ../../ex01/testShell00.tar
 result=$(ls -l testShell00 | xargs)
 
-if [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 23:42 testShell00" ]; then
+if [ "${result}" = "-r--r-xr-x 1 $user $years_angouleme 40 juin 1 23:42 testShell00" ]; then
 	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
-elif [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 $years testShell00" ]; then
+elif [ "${result}" = "-r--r-xr-x 1 $user $years_angouleme 40 juin 1 $years testShell00" ]; then
 	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
 else
@@ -115,10 +115,10 @@ octet1=$(ls -l exo2 | xargs | awk '{print $7}')
 octet2=$(ls -l exo2 | xargs | awk '{print $25}')
 result=$(ls -l exo2 | xargs)
 
-if [ "${result}" = "total $total drwx--xr-x 2 jdetre jdetre $octet1 juin 1 20:47 test0 -rwx--xr-- 1 jdetre jdetre 4 juin 1 21:46 test1 dr-x---r-- 2 jdetre jdetre $octet2 juin 1 22:45 test2 -r-----r-- 2 jdetre jdetre 1 juin 1 23:44 test3 -rw-r----x 1 jdetre jdetre 2 juin 1 23:43 test4 -r-----r-- 2 jdetre jdetre 1 juin 1 23:44 test5 lrwxrwxrwx 1 jdetre jdetre 5 juin 1 22:20 test6 -> test0" ]; then
+if [ "${result}" = "total $total drwx--xr-x 2 jdetre $years_angouleme $octet1 juin 1 20:47 test0 -rwx--xr-- 1 jdetre $years-angouleme 4 juin 1 21:46 test1 dr-x---r-- 2 jdetre $years_angouleme $octet2 juin 1 22:45 test2 -r-----r-- 2 jdetre $years_angouleme 1 juin 1 23:44 test3 -rw-r----x 1 jdetre $years_angouleme 2 juin 1 23:43 test4 -r-----r-- 2 jdetre $years_angouleme 1 juin 1 23:44 test5 lrwxrwxrwx 1 jdetre $years_angouleme 5 juin 1 22:20 test6 -> test0" ]; then
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
-elif [ "${result}" = "total 24 drwx--xr-x 2 jdetre jdetre 4096 juin 1 $years test0 -rwx--xr-- 1 jdetre jdetre 4 juin 1 $years test1 dr-x---r-- 2 jdetre jdetre 4096 juin 1 $years test2 -r-----r-- 2 jdetre jdetre 1 juin 1 $years test3 -rw-r----x 1 jdetre jdetre 2 juin 1 $years test4 -r-----r-- 2 jdetre jdetre 1 juin 1 $years test5 lrwxrwxrwx 1 jdetre jdetre 5 juin 1 $years test6 -> test0" ]; then
+elif [ "${result}" = "total 24 drwx--xr-x 2 jdetre $years_angouleme 4096 juin 1 $years test0 -rwx--xr-- 1 jdetre $years_angouleme 4 juin 1 $years test1 dr-x---r-- 2 jdetre $years_angouleme 4096 juin 1 $years test2 -r-----r-- 2 jdetre $years_angouleme 1 juin 1 $years test3 -rw-r----x 1 jdetre $years_angouleme 2 juin 1 $years test4 -r-----r-- 2 jdetre $years_angouleme 1 juin 1 $years test5 lrwxrwxrwx 1 jdetre $years_angouleme 5 juin 1 $years test6 -> test0" ]; then
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
 else
