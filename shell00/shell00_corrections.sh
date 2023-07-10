@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 03:30:57 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 03:33:16 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -55,7 +55,7 @@ sleep 2;
 point=0
 delay=0.03
 echo "\n\n"
-text="Bienvenue dans le testeur de projet 42! $rouge$coeur $coeur$resetcolor"
+text="Bienvenue dans le testeur de projet 42 v1.0! $rouge$coeur $coeur$resetcolor"
 
 i=1
 while [ "$i" -le "${#text}" ]; do
@@ -214,4 +214,4 @@ else
 	echo "\033[1mTu as $point/10 exercices de bon !$resetcolor"
 fi
 
-echo "N'hesite pas a me faire un retour sur d'éventuels bugs tels qu'ils soient. Bonne piscine !!!\nEt n'oublie pas que le testeur est la juste pour te donner un coup de pouce, il ne dispense pas de lire et de comprendre le code et c'est important de ne pas se fier a une unique source."
+echo "N'hesite pas a me faire un retour sur d'éventuels bugs tels qu'ils soient.\nEt n'oublie pas que le testeur est la juste pour te donner un coup de pouce, il ne dispense pas de lire et de comprendre le code et c'est important de ne pas se fier a une unique source. Bonne piscine !!!"
