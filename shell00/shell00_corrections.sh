@@ -6,7 +6,7 @@
 #    By: ${user} <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by ${user}            #+#    #+#              #
-#    Updated: 2023/07/10 13:13:44 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 13:14:32 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -118,7 +118,7 @@ str="total $total drwx--xr-x 2 ${user} ${years}_angouleme $octet1 Jun 1 20:47 te
 echo $result
 echo $str
 ls -l exo2
-if [ "${result}" == "${str}" ]; then
+if [ "${result}" = "${str}" ]; then
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
 elif [ "${result}" = "total 24 drwx--xr-x 2 ${user} ${years}_angouleme 4096 Jun 1 ${years} test0 -rwx--xr-- 1 ${user} ${years}_angouleme 4 Jun 1 ${years} test1 dr-x---r-- 2 ${user} ${years}_angouleme 4096 Jun 1 ${years} test2 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 ${years} test3 -rw-r----x 1 ${user} ${years}_angouleme 2 Jun 1 ${years} test4 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 ${years} test5 lrwxrwxrwx 1 ${user} ${years}_angouleme 5 Jun 1 ${years} test6 -> test0" ]; then
