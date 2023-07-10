@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 02:19:47 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 02:26:45 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -182,4 +182,13 @@ if [ "${result}" = "${liste}" ] && [ $(ls -l | grep -e test8 -e test9 | wc -l) -
 	echo "Ex08/git_commit : $vert$tcheck$resetcolor\n"
 else
 	echo "Ex08/git_commit : $rouge$croix$resetcolor\n"
+fi
+
+#____________________EX09/FT_MAGIC__________________
+
+diff ft_magic ../../ex09/ft_magic
+if [ $? -eq 0 ]; then
+	echo "Ex09/ft_magic : $vert$tcheck$resetcolor\n"
+else
+	echo "Ex09/ft_magic : $rouge$croix$resetcolor\n"
 fi
