@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 02:40:14 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 03:05:44 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -52,6 +52,7 @@ sleep 2;
 
 #____________________WELLCOME______________________________
 
+point=0
 delay=0.03
 echo "\n\n"
 text="Bienvenue dans le testeur de projet 42! $rouge$coeur $coeur$resetcolor"
@@ -82,6 +83,7 @@ result=$(cat -e ../../ex00/z)
 
 if [ ${result} = "Z\$" ]; then
 	echo "\n\nEx00/z : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "\n\nEx00/z : $rouge$croix$resetcolor\n"
 fi
@@ -96,8 +98,10 @@ result=$(ls -l testShell00 | xargs)
 
 if [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 23:42 testShell00" ]; then
 	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
+	point+=1
 elif [ "${result}" = "-r--r-xr-x 1 $user $user 40 juin 1 $years testShell00" ]; then
 	echo "Ex01/testShell00 : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex01/testShell00 : $rouge$croix$resetcolor\n"
 fi
@@ -115,6 +119,7 @@ if [ "${result}" = "total $total drwx--xr-x 2 jdetre jdetre $octet1 juin 1 20:47
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
 elif [ "${result}" = "total 24 drwx--xr-x 2 jdetre jdetre 4096 juin 1 $years test0 -rwx--xr-- 1 jdetre jdetre 4 juin 1 $years test1 dr-x---r-- 2 jdetre jdetre 4096 juin 1 $years test2 -r-----r-- 2 jdetre jdetre 1 juin 1 $years test3 -rw-r----x 1 jdetre jdetre 2 juin 1 $years test4 -r-----r-- 2 jdetre jdetre 1 juin 1 $years test5 lrwxrwxrwx 1 jdetre jdetre 5 juin 1 $years test6 -> test0" ]; then
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex02/exo2.tar : $rouge$croix$resetcolor\n"
 fi
@@ -126,6 +131,7 @@ result=$(cat ../../ex03/id_rsa_pub)
 
 if [ "${result}" = "${id_rsa}" ]; then
 	echo "Ex03/id_rsa_pub : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex03/id_rsa_pub : $rouge$croix$resetcolor\n"
 fi
@@ -137,6 +143,7 @@ result=$(sh ../../ex04/midLS)
 
 if [ "${result}" = "${midLS}" ]; then
 	echo "Ex04/midLS : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex04/midLS : $rouge$croix$resetcolor\n"
 fi
@@ -148,6 +155,7 @@ result=$(sh ../../ex05/git_commit.sh)
 
 if [ "${result}" = "${commit}" ]; then
 	echo "Ex05/git_commit : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex05/git_commit : $rouge$croix$resetcolor\n"
 fi
@@ -161,6 +169,7 @@ gitignore=$(git ls-files --others --ignored --exclude-standard)
 result=$(sh ../../ex06/git_ignore.sh)
 if [ "${result}" = "${gitignore}" ]; then
 	echo "Ex06/git_ignore : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex06/git_ignore : $rouge$croix$resetcolor\n"
 fi
@@ -170,6 +179,7 @@ fi
 diff b ../../ex07/b
 if [ $? -eq 0 ]; then
 	echo "Ex07/diff : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex07/diff : $rouge$croix$resetcolor\n"
 fi
@@ -180,6 +190,7 @@ liste=$(find . -type f \( -name '*~' -o -name '#*#' \) -print)
 result=$(sh ../../ex08/clean)
 if [ "${result}" = "${liste}" ] && [ $(ls -l | grep -e test8 -e test9 | wc -l) -eq 0 ] && [ $(ls -l | grep test10 | wc -l) -eq 1 ] && [ $(ls -l test10 | grep -e test8 -e test9 | wc -l) -eq 0 ]; then
 	echo "Ex08/clean : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex08/clean : $rouge$croix$resetcolor\n"
 fi
@@ -189,10 +200,17 @@ fi
 diff ft_magic ../../ex09/ft_magic >/dev/null
 if [ $? -eq 0 ]; then
 	echo "Ex09/ft_magic : $vert$tcheck$resetcolor\n"
+	point+=1
 else
 	echo "Ex09/ft_magic : $rouge$croix$resetcolor\n"
 fi
 
 #____________________ENDING_________________________
 
+if [ $point -eq 9 ]; then
+	echo "\033[1;3;5;32mFelicitation ! c'est un sans faute !$resetcolor"
+elif [ $point -eq 0 ]; then
+	echo "\033[1mTu as $point/9 exercices de bon !$resetcolor"
+fi
 
+echo "N'hesite pas a me faire un retour sur des bugs tels qu'ils soient. Bonne piscine !!!"
