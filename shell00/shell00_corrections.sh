@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 02:26:45 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 02:30:16 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -192,3 +192,7 @@ if [ $? -eq 0 ]; then
 else
 	echo "Ex09/ft_magic : $rouge$croix$resetcolor\n"
 fi
+
+#____________________ENDING_________________________
+
+
