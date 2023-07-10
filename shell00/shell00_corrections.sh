@@ -6,7 +6,7 @@
 #    By: ${user} <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by ${user}            #+#    #+#              #
-#    Updated: 2023/07/10 13:14:32 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 13:16:45 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -114,10 +114,7 @@ total=$(ls -l exo2 | xargs | awk '{print $2}')
 octet1=$(ls -l exo2 | xargs | awk '{print $7}')
 octet2=$(ls -l exo2 | xargs | awk '{print $25}')
 result=$(ls -l exo2 | xargs)
-str="total $total drwx--xr-x 2 ${user} ${years}_angouleme $octet1 Jun 1 20:47 test0 -rwx--xr-- 1 ${user} ${years}-angouleme 4 Jun 1 21:46 test1 dr-x---r-- 2 ${user} ${years}_angouleme $octet2 Jun 1 22:45 test2 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 23:44 test3 -rw-r----x 1 ${user} ${years}_angouleme 2 Jun 1 23:43 test4 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 23:44 test5 lrwxrwxrwx 1 ${user} ${years}_angouleme 5 Jun 1 22:20 test6 -> test0"
-echo $result
-echo $str
-ls -l exo2
+str="total $total drwx--xr-x 2 ${user} ${years}_angouleme $octet1 Jun 1 20:47 test0 -rwx--xr-- 1 ${user} ${years}_angouleme 4 Jun 1 21:46 test1 dr-x---r-- 2 ${user} ${years}_angouleme $octet2 Jun 1 22:45 test2 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 23:44 test3 -rw-r----x 1 ${user} ${years}_angouleme 2 Jun 1 23:43 test4 -r-----r-- 2 ${user} ${years}_angouleme 1 Jun 1 23:44 test5 lrwxrwxrwx 1 ${user} ${years}_angouleme 5 Jun 1 22:20 test6 -> test0"
 if [ "${result}" = "${str}" ]; then
 	echo "Ex02/exo2.tar : $vert$tcheck$resetcolor\n"
 	point=$((point + 1))
