@@ -6,7 +6,7 @@
 #    By: jdetre <julien.detre.dev@gmail.com>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/07/08 17:31:32 by jdetre            #+#    #+#              #
-#    Updated: 2023/07/10 02:34:47 by jdetre           ###   ########.fr        #
+#    Updated: 2023/07/10 02:40:14 by jdetre           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 #!/bin/bash
@@ -179,9 +179,9 @@ fi
 liste=$(find . -type f \( -name '*~' -o -name '#*#' \) -print)
 result=$(sh ../../ex08/clean)
 if [ "${result}" = "${liste}" ] && [ $(ls -l | grep -e test8 -e test9 | wc -l) -eq 0 ] && [ $(ls -l | grep test10 | wc -l) -eq 1 ] && [ $(ls -l test10 | grep -e test8 -e test9 | wc -l) -eq 0 ]; then
-	echo "Ex08/git_commit : $vert$tcheck$resetcolor\n"
+	echo "Ex08/clean : $vert$tcheck$resetcolor\n"
 else
-	echo "Ex08/git_commit : $rouge$croix$resetcolor\n"
+	echo "Ex08/clean : $rouge$croix$resetcolor\n"
 fi
 
 #____________________EX09/FT_MAGIC__________________
